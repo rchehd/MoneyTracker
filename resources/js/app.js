@@ -2,6 +2,7 @@ import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
 import {ZiggyVue} from 'ziggy'
 import '../css/app.css'
+import MainLayout from "@/Layout/MainLayout.vue";
 
 createInertiaApp({
   progress: {
@@ -13,7 +14,7 @@ createInertiaApp({
   resolve: async (name) => {
     const pages = import.meta.glob('./Pages/**/*.vue', { eager: true })
     const page = await pages[`./Pages/${name}.vue`]
-    // page.default.layout = page.default.layout || MainLayout
+    page.default.layout = page.default.layout || MainLayout
     return page
   },
   setup({ el, App, props, plugin }) {

@@ -7,10 +7,10 @@
         <title>Larazillow</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.css" />
         @routes
-        @vite('resources/js/app.js')
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         @inertiaHead
     </head>
-        <body>
+    <body class="bg-green-900">
         @inertia
 
     </body>
