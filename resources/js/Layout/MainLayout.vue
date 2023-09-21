@@ -199,23 +199,34 @@
 <!--    <slot />-->
   </main>
   <footer class="footer_area bg-gray-700 relative z-10">
-    <div class="p-5">
-      <div class="p-4 grid grid-cols-3">
-        <div>
+    <div class="container mx-auto py-5">
+      <div class="p-4 pb-10 flex flex-col justify-center items-center gap-5 xl:grid xl:grid-cols-12  border-b border-b-white">
+        <div class="col-span-3">
           <Logo :logo_text="'MoneyTracker'" class="text-white" />
         </div>
-        <div class="flex justify-center items-center gap-1">
+        <div class="col-span-6 flex justify-center items-center gap-2 xl:gap-1">
           <NavItem :text="'About us'" class="text-white text-xs p-0"/>
           <NavItem :text="'About us'" class="text-white text-xs"/>
           <NavItem :text="'About us'" class="text-white text-xs"/>
           <NavItem :text="'About us'" class="text-white text-xs"/>
           <NavItem :text="'About us'" class="text-white text-xs"/>
         </div>
-        <div class="flex justify-end items-center gap-1">
-          <NavItem :text="'Facebook'" class="text-white" />
-          <NavItem :text="'Facebook'" class="text-white" />
-          <NavItem :text="'Facebook'" class="text-white" />
+        <div class="col-span-3 flex justify-end items-center gap-4 xl:gap-1">
+          <font-awesome-icon icon="fab fa-facebook" class="text-white text-3xl hover:scale-110" />
+          <font-awesome-icon icon="fab fa-instagram" class="text-white text-3xl hover:scale-110" />
+          <font-awesome-icon icon="fab fa-telegram" class="text-white text-3xl hover:scale-110" />
         </div>
+      </div>
+      <div class="mt-5 mb-10 flex justify-between">
+        <div class="flex flex-row">
+          <NavItem :text="'About us'" class="text-white text-xs p-0"/>
+          <NavItem :text="'About us'" class="text-white text-xs p-0"/>
+          <NavItem :text="'About us'" class="text-white text-xs p-0"/>
+        </div>
+        <div>
+          <span class="text-white">©2023 Lampo Licensing, LLC. All rights reserved.</span>
+        </div>
+
       </div>
 
     </div>

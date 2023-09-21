@@ -3,6 +3,11 @@ import { createInertiaApp } from '@inertiajs/vue3'
 import {ZiggyVue} from 'ziggy'
 import '../css/app.css'
 import MainLayout from "@/Layout/MainLayout.vue";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faFacebook, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons'
+
+library.add(faFacebook, faInstagram, faTelegram)
 
 createInertiaApp({
   progress: {
@@ -21,6 +26,7 @@ createInertiaApp({
     createApp({ render: () => h(App, props) })
         .use(plugin)
         .use(ZiggyVue)
+        .component('font-awesome-icon', FontAwesomeIcon)
         .mount(el)
   },
 })
