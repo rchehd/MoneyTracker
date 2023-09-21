@@ -12,6 +12,43 @@ defineProps({
   <div>
     The message is {{ message }}
   </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+  <div>
+    The message is {{ message }}
+  </div>
+
 </template>
 
 <style scoped>

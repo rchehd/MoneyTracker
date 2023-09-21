@@ -15,3 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [IndexController::class, 'index']);
+
+Route::prefix('content')
+  ->name('content.')
+  ->group(function () {
+    Route::resource('homepage', HomePageController::class);
+  });

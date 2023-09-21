@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  font-family: Urbanist, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*body {*/
+/*  font-family: 'Instrument Sans', sans-serif;*/
+/*}*/
+.logo {
+  font-family: 'Syne', sans-serif;
+}
+
+.translate-y-full-2 {
+  transform: translateY(0%);
+  transition-duration: 500ms;
+}
+
+.translate-y-full {
+  transform: translateY(-100%);
+  transition-duration: 500ms;
+}
+
+@layer components {
+
+  .btn-primary {
+    @apply z-10 rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 hover:before:scale-105 active:duration-75 active:before:scale-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600
+  }
+
+  h1 {
+    @apply text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl
+  }
+
+  h2 {
+    @apply text-2xl font-bold text-gray-700 dark:text-white md:text-4xl
+  }
+  h3 {
+    @apply text-2xl font-semibold text-gray-800 dark:text-white
+  }
+
+  p {
+    @apply mt-6 text-lg leading-8 text-gray-600
+  }
+
+  .text-primary {
+    @apply text-purple-700
+  }
+
+  .featured-block {
+    @apply flex flex-col justify-center text-center p-2
+  }
+
+}

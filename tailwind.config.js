@@ -7,6 +7,16 @@ export default {
   ],
   theme: {
     extend: {},
+    container: {
+      padding: {
+        DEFAULT: '0rem',
+        sm: '0rem',
+        md: '0rem',
+        lg: '2rem',
+        xl: '4.5rem',
+        '2xl': '7.5rem',
+      },
+    },
   },
   plugins: [
     require('@tailwindcss/forms'),
