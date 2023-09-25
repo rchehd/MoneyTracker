@@ -14,10 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'show']);
 
-Route::prefix('content')
-  ->name('content.')
-  ->group(function () {
-    Route::resource('homepage', HomePageController::class);
-  });
+//Route::prefix('content')
+//  ->name('content.')
+//  ->group(function () {
+//    Route::resource('homepage', HomePageController::class);
+//  });

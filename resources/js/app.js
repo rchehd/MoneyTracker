@@ -2,7 +2,7 @@ import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
 import {ZiggyVue} from 'ziggy'
 import '../css/app.css'
-import MainLayout from "@/Layout/MainLayout.vue";
+import MainLayout from "@/Layouts/MainLayout.vue";
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFacebook, faInstagram, faTelegram } from '@fortawesome/free-brands-svg-icons'
